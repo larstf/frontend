@@ -15,9 +15,7 @@ const ShortUrl: NextPage<{ url: string }> = ({ url }) => {
     return <NotFound />
 
   return (
-    <>
-      <NextHead />
-    </>
+    <></>
   )
 }
 
