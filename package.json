@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8055"
+    "start": "next start -p 7777"
   },
   "dependencies": {
     "@pulsejs/core": "^3.5.8",
