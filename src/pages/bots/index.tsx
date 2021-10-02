@@ -49,9 +49,15 @@ export async function getServerSideProps() {
 }
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 368px));
+  
+  @media only screen and (max-width: calc(368px * 2)) {
+    gap: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 
 const Label = styled(typography.h3)`

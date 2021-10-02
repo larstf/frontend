@@ -40,7 +40,7 @@ const BotCard: React.FC<Bot> = ({ user, approximate_server_count, description, n
 const Card = styled.div`
   border-radius: 8px;
   border: 1px solid ${colors.LOW_OPACITY};
-  max-width: 248px;
+  // max-width: 248px;
   width: 100%;
   transition: background 200ms ease;
   display: flex;
