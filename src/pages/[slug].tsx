@@ -1,7 +1,6 @@
 import { NextPage, NextPageContext } from 'next';
 import { useEffect } from 'react';
 
-import NextHead from '../components/NextHead';
 import core from '../core';
 import NotFound from './404';
 
