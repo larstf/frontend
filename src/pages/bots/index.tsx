@@ -19,7 +19,7 @@ const BotIndex: NextPage<{ bots: Bot[] }> = ({ bots }) => {
           <Label>Public bots</Label>
           <Wrapper>
             {bots.filter((b) => !b.isPrivate).map((bot) =>
-              <BotCard {...bot} />
+              <BotCard {...bot} key={bot.user.id} />
             )}
           </Wrapper>
         </Category>
@@ -27,7 +27,7 @@ const BotIndex: NextPage<{ bots: Bot[] }> = ({ bots }) => {
           <Label>Private bots</Label>
           <Wrapper>
             {bots.filter((b) => b.isPrivate).map((bot) =>
-              <BotCard {...bot} />
+              <BotCard {...bot} key={bot.user.id} />
             )}
           </Wrapper>
         </Category>
