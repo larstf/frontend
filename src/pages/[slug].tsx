@@ -21,7 +21,7 @@ const ShortUrl: NextPage<{ url: string }> = ({ url }) => {
 export async function getServerSideProps(ctx: NextPageContext) {
   const { slug } = ctx.query;
 
-  const response = await core.api.get(`urls/${slug}`);
+  const response = await core.api.get(`urls/${slug}?with_images=true`);
 
   return {
     props: {
