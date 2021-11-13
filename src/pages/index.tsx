@@ -51,7 +51,11 @@ const Wrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  padding: 2.5rem 0 5rem 2.5rem;
+  padding: 2.5rem 2.5rem 5rem 5rem;
+
+  @media only screen and (max-width: 800px) {
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+  } 
 `;
 
 const Text = styled(typography.p)`
