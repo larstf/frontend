@@ -44,10 +44,14 @@ const Wrapper = styled.div`
   display: flex;
   height: 100vh;
   align-items: flex-end;
+
+  @media only screen and (max-width: 800px) {
+    height: initial;
+  } 
 `;
 
 const TextWrapper = styled.div`
-  padding: 5rem 2.5rem;
+  padding: 2.5rem 0 5rem 2.5rem;
 `;
 
 const Text = styled(typography.p)`
