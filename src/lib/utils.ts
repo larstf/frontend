@@ -12,3 +12,6 @@ export const media = Object.keys(SIZES).reduce((acc: { [k: string]: any }, label
   `;
   return acc
 }, {});
+
+export const CDN = (path: string) => 
+  `${process.env.NEXT_PUBLIC_CDN_HOST}${path}`;
